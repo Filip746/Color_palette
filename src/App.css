@@ -1,0 +1,119 @@
+body {
+  background: #f7f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #22223b;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+
+button {
+  background: #4baef4;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #1d7fc2;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 340px;
+  margin: 32px auto 24px auto;
+  padding: 24px;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.palette-section {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.color-square {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 8px;
+  position: relative;
+  transition: transform 0.12s;
+  overflow: hidden;
+}
+
+.color-square:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.14);
+}
+
+.color-square button {
+  background: rgba(255, 255, 255, 0.85);
+  color: #22223b;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  margin: 0;
+  width: auto;
+  align-self: center;
+  transition: background 0.18s;
+}
+
+.color-square button:hover {
+  background: rgba(255, 255, 255, 0.38);
+  color: #22223b;
+  border: 1px solid #22223b;
+}
